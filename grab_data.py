@@ -1,7 +1,6 @@
 """
 This will grab the data from CricInfo Site about TestMatch Played by Pakistan against England from 1954-till now
 """
-#http://stats.espncricinfo.com/ci/engine/stats/analysis.html?search=Pakistan;template=analysis
 import requests
 from bs4 import BeautifulSoup
 url = 'http://stats.espncricinfo.com/ci/engine/team/7.html?class=1;opposition=1;template=results;type=team;view=results'

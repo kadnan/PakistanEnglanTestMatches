@@ -4,7 +4,7 @@ fields = ['Result','Toss','Bat']
 df = pd.read_csv(file_name,skipinitialspace=True,usecols=fields)
 df.to_csv('data_england_test_filter.csv',index=False)
 
-# Convert features into digits
+# Convert features and labels into digits
 df_replace = df.replace(['lost','draw','won','1st','2nd'],[-1,0,1,-1,1])
 dataset_length = len(df_replace)
 # 67% of training data
